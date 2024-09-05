@@ -1,0 +1,63 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cinema-list {
+  margin: 20px 0;
+}
+
+.cinema-item {
+  border: 1px solid #ccc;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cinema-item h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cinema-item p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.showtimes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: rgb(123, 0, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: Georgia, serif;
+}
+
+button:hover {
+  background-color: #067eff44;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Cards and Cinema List</title>
+  <link rel="stylesheet" href="/secondpage/sec.css">
+  <link rel="stylesheet" href="/secondpage/second.1/styles1.css">
+</head>
+<body>
+
+  <!-- Movie Cards Section -->
+  <div class="movie-cards-container">
+    <!-- Movie Card Template -->
+    <div class="movie-card" id="movie-card-1">
+      <div class="left-div">
+        <h2 class="movie-title">MOVIE NAME ?</h2>
+        <p><strong>Rating:</strong> U/A</p>
+        <p><strong>Duration:</strong> 2h 50m</p>
+        <p><strong>Genre:</strong> Drama</p>
+        <p><strong>Language:</strong> Telugu</p>
+        <p><strong>Showtimes:</strong> 09:45 PM, 10:00 PM</p>
+        <p><strong>Theater:</strong> Kameswari & Kinnera AC Laser 4K Projection (Dolby Atmos & 7.1 Ultrasound)</p>
+        <div class="seats-button">
+           <a href="/Movie Seat Selection/idea2/index.html"> <button class="book-seats-button">Book Seats</button></a>
+        </div>
+      </div>
+      
+      <div class="right-div">
+        <img src="https://via.placeholder.com/300x200?text=MOVIE+NAME" alt="Saripodhaa Sanivaaram">
+        <div class="filters-container">
+          <input type="date" id="date-picker" />
+          <div class="filter-group">
+            <label for="language">Language:</label>
+            <select id="language">
+              <option value="telugu">Telugu</option>
+              <!-- More options -->
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="format">Format:</label>
+            <select id="format">
+              <option value="2d">2D</option>
+              <!-- More options -->
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="price">Price:</label>
+            <select id="price">
+              <option value="standard">Standard</option>
+              <!-- More options -->
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="showtime">Showtime:</label>
+            <select id="showtime">
+              <option value="all">All</option>
+              <!-- More options -->
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="premium-seats">Premium Seats:</label>
+            <select id="premium-seats">
+              <option value="available">Available</option>
+              <!-- More options -->
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- More movie cards can be added similarly -->
+  </div>
+
+  <!-- Cinema List Section -->
+  <div id="cinema-list" class="cinema-list">
+    <!-- Cinema items will be dynamically inserted here -->
+  </div>
+
+  <script src="/secondpage/sec.js"></script>
+  <script src="/secondpage/second.1/script1.js"></script>
+</body>
+</html>

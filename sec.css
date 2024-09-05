@@ -1,0 +1,147 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movie-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-div {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.right-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-div img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.filters-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-group select,
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-family: Georgia, serif;
+  background-color: #f5f5f5;
+}
+.book-seats-button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-image: url('/images/movie-ticket-svgrepo-com.svg'); /* Replace with your image path */
+  background-size: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 2.8;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  text-align: center;
+  
+  display: block;
+  margin-top: 20px;
+}
+
+.book-seats-button:hover {
+  opacity: 1;
+}
+.seats-button {
+  margin: 100px;
+}
+@media (max-width: 768px) {
+  .movie-card {
+    flex-direction: column-reverse; /* Reverse the order */
+  }
+
+  .left-div {
+    border-right: none;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .right-div {
+    padding: 10px;
+  }
+
+  .right-div img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .book-seats-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-seats-button {
+    font-size: 14px;
+    padding: 8px 15px;
+    background-size: 40px;
+  }
+
+  .filter-group select,
+  input[type="date"] {
+    font-size: 14px;
+    padding: 6px;
+  }
+}

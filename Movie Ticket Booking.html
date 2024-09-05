@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Share Your Contact Details</h1>
+    </header>
+    <div class="container">
+        <div class="left-section">
+            <section class="content-details">
+                <h2>Share Your Contact Details</h2>
+                <form id="contact-form">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </form>
+            </section>
+            
+            <section class="apply-promo">
+                <h2>Unlock Offers or Apply Promo Code</h2>
+                <input type="text" id="promo-code" placeholder="Enter promo code">
+                <button id="apply-promo">Apply</button>
+            </section>
+            
+            <section class="payment-section">
+                <div class="payment-left">
+                    <h2>Payment Methods</h2>
+                    <label>
+                        <input type="radio" name="payment-method" value="quikpay" required>
+                        Quik Pay (UPI)
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="card">
+                        Debit/Credit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="netbanking">
+                        Net Banking
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="wallets">
+                        Mobile Wallets (Paytm, PhonePe, Google Pay)
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="voucher">
+                        Gift Voucher
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="redeem-points">
+                        Redeem Points
+                    </label>
+                </div>
+
+                <div class="payment-right">
+                    <!-- Content dynamically shown based on payment method -->
+                </div>
+            </section>
+        </div>
+        
+        <div class="right-section">
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="order-details">
+                    <h3>Movie Title: Movie Title</h3>
+                    <p>Date: August 30, 2024</p>
+                    <p>Theater: Cinema Hall A</p>
+                    <p>Tickets: 2</p>
+                    <p>Ticket Price: $10.00</p>
+                    <p>Convenience Fees: $1.00</p>
+                    <p>Taxes: $0.50</p>
+                </div>
+
+                <div class="contribution">
+                    <p>Contribution to BookASmile:</p>
+                    <button id="add-contribution">Add Rs. 2</button>
+                </div>
+                
+                <div class="total-amount">
+                    <p>Total Amount Payable: <span id="total-amount">$11.50</span></p>
+                </div>
+                
+                <div class="ip-address">
+                    <p>Your IP Address: <span id="ip-address">Loading...</span></p>
+                </div>
+            </section>
+            
+            <button id="confirm-booking">Confirm Booking</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
